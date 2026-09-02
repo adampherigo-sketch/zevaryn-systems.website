@@ -3,25 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <title>
-    Zevaryn Systems — Custom Websites Built Around Your Business
-  </title>
+  <title>Zevaryn Systems — Custom Websites &amp; Business Tools</title>
 
   <meta
     name="description"
-    content="Zevaryn Systems designs and develops custom websites, digital experiences, integrations, and ongoing web solutions built around your business."
+    content="Zevaryn Systems designs and develops custom websites, digital experiences, and business tools built around the way your organization works — from first concept through launch and long-term support."
   >
 
-  <link
-    rel="stylesheet"
-    href="css/style.css"
-  >
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%230a0a0c'/%3E%3Ccircle cx='20' cy='20' r='15' fill='none' stroke='%23ff2f7e' stroke-width='2.4' stroke-dasharray='62 30' transform='rotate(-45 20 20)'/%3E%3Cpath d='M13 14H27L14 26H28' fill='none' stroke='%23f4f2f6' stroke-width='3.4' stroke-linecap='square' stroke-linejoin='round'/%3E%3C/svg%3E">
 </head>
 
 <body>
@@ -30,102 +23,41 @@
        ENTRY SCREEN
        ========================================================== -->
 
-  <section
-    id="entry-screen"
-    aria-labelledby="entry-title"
-  >
+  <section id="entry-screen" aria-labelledby="entry-title">
 
-    <div
-      class="entry-background"
-      aria-hidden="true"
-    >
+    <div class="entry-background" aria-hidden="true">
       <div class="entry-glow"></div>
-
       <div class="entry-orbit entry-orbit-one"></div>
-
       <div class="entry-orbit entry-orbit-two"></div>
-
       <div class="entry-scan"></div>
     </div>
 
-
     <div class="entry-interface">
 
-      <div class="entry-status">
-        SYSTEM / READY
-      </div>
-
+      <div class="entry-status">INITIALIZING</div>
 
       <div class="entry-logo-wrap">
-
-        <svg
-          class="entry-logo"
-          viewBox="0 0 40 40"
-          fill="none"
-          aria-hidden="true"
-        >
-
-          <circle
-            cx="20"
-            cy="20"
-            r="17"
-            stroke="#ff2f7e"
-            stroke-width="1.3"
-            stroke-dasharray="70 30"
-            stroke-linecap="round"
-            transform="rotate(-45 20 20)"
-          />
-
-          <path
-            d="M12 13H28L13 27H29"
-            stroke="white"
-            stroke-width="3"
-            stroke-linecap="square"
-            stroke-linejoin="round"
-          />
-
+        <svg class="entry-logo" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <circle cx="20" cy="20" r="17" stroke="#ff2f7e" stroke-width="1.3" stroke-dasharray="70 30" stroke-linecap="round" transform="rotate(-45 20 20)"/>
+          <path d="M12 13H28L13 27H29" stroke="#fff" stroke-width="3" stroke-linecap="square" stroke-linejoin="round"/>
         </svg>
-
       </div>
 
+      <div class="entry-eyebrow">ZEVARYN.SYSTEMS</div>
 
-      <div class="entry-eyebrow">
-        ZEVARYN.SYSTEMS
-      </div>
+      <h1 id="entry-title">Built for the way your business works.</h1>
 
-
-      <h1 id="entry-title">
-        Built for the way your business works.
-      </h1>
-
-
-      <p>
-        Custom websites. Digital experiences. Built differently.
-      </p>
-
+      <p>Custom websites. Digital experiences. Business tools.</p>
 
       <div class="entry-actions">
-
-        <button
-          class="entry-button entry-button-primary"
-          type="button"
-          data-entry-enter
-        >
+        <button class="entry-button entry-button-primary" type="button" data-entry-enter>
           ENTER
         </button>
-
-        <button
-          class="entry-button entry-button-secondary"
-          type="button"
-          data-entry-exit
-        >
-          EXIT
-        </button>
-
       </div>
 
-    </div>
+      <p class="entry-hint">Press Enter or click anywhere</p>
 
+    </div>
 
     <footer class="entry-footer">
       <span>WASHINGTON, DC</span>
@@ -141,24 +73,50 @@
        BACKGROUND EFFECTS
        ========================================================== -->
 
-  <div
-    class="grid-overlay"
-    aria-hidden="true"
-  ></div>
-
-  <div
-    class="grain"
-    aria-hidden="true"
-  ></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
 
 
 
   <!-- ==========================================================
-       SHARED NAVIGATION
-       Loaded from components/navbar.html
+       NAVIGATION
        ========================================================== -->
 
-  <div id="navbar-placeholder"></div>
+  <header class="site-nav">
+    <div class="container nav-inner">
+
+      <a href="index.html" class="nav-logo" aria-label="Zevaryn Systems — home">
+        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <circle cx="20" cy="20" r="17" stroke="#ff2f7e" stroke-width="1.3" stroke-dasharray="70 30" stroke-linecap="round" transform="rotate(-45 20 20)"/>
+          <path d="M12 13H28L13 27H29" stroke="#fff" stroke-width="3" stroke-linecap="square" stroke-linejoin="round"/>
+        </svg>
+        <span>ZEVARYN<span class="sub">SYSTEMS</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="start-a-project.html" class="nav-cta">Start a Project</a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html" class="active" aria-current="page">Home</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="start-a-project.html" class="m-cta">Start a Project →</a>
+  </div>
 
 
 
@@ -170,693 +128,284 @@
 
 
     <!-- ========================================================
-         HERO
+         1. HERO
          ======================================================== -->
 
-    <section class="section hero-section">
+    <section class="home-hero">
 
-      <div class="container hero-grid">
+      <div class="container home-hero-grid">
 
+        <div class="home-hero-copy">
 
-        <!-- HERO COPY -->
+          <p class="home-hero-eyebrow" data-r="1">
+            Web Design <span>/</span> Development <span>/</span> <b>Business Systems</b>
+          </p>
 
-        <div class="hero-copy">
-
-          <div
-            class="label reveal in"
-            style="margin-bottom:22px;"
-          >
-            WEB DESIGN. WEB DEVELOPMENT. DIGITAL EXPERIENCES.
-          </div>
-
-
-          <h1
-            style="
-              font-size:clamp(40px,5.2vw,68px);
-              margin-bottom:24px;
-            "
-          >
-
-            <span
-              class="reveal in"
-              style="display:block;"
-            >
-              Built for the way
-            </span>
-
-            <span
-              class="reveal in"
-              data-delay="120"
-              style="display:block;"
-            >
-              your <span class="brush">business</span> works.
-            </span>
-
+          <h1>
+            <span class="line"><span>Built for the way</span></span>
+            <span class="line"><span>your <span class="brush">business</span> works.</span></span>
           </h1>
 
-
-          <p
-            class="reveal in"
-            data-delay="220"
-            style="font-size:17px;"
-          >
-            Zevaryn Systems designs and develops custom websites
-            built around your business, your brand, and your goals —
-            from the first concept through launch and long-term support.
+          <p class="home-hero-lead" data-r="2">
+            Zevaryn Systems designs and develops custom websites, digital
+            experiences, and business tools built around the way your
+            organization actually works.
           </p>
 
-
-          <div
-            class="hero-actions reveal in"
-            data-delay="320"
-          >
-
-            <a
-              href="start-a-project.html"
-              class="btn btn-primary"
-            >
+          <div class="home-hero-actions" data-r="3">
+            <a href="start-a-project.html" class="btn btn-primary">
               Start a Project
-
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                aria-hidden="true"
-              >
-                <path
-                  d="M5 12h14M13 6l6 6-6 6"
-                  stroke="currentColor"
-                  stroke-width="2"
-                />
-              </svg>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg>
             </a>
-
-
-            <a
-              href="work.html"
-              class="btn btn-ghost"
-            >
+            <a href="work.html" class="btn btn-ghost">
               View Our Work
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg>
+            </a>
+          </div>
 
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                aria-hidden="true"
-              >
-                <path
-                  d="M5 12h14M13 6l6 6-6 6"
-                  stroke="currentColor"
-                  stroke-width="2"
-                />
+          <p class="home-hero-note" data-r="4">
+            <b>Custom build.</b> <i>·</i> <b>Purposeful design.</b> <i>·</i> <b>Real support.</b>
+          </p>
+
+        </div>
+
+
+        <div class="hero-interface" data-r="5" aria-hidden="true">
+          <div class="hero-interface-inner">
+
+            <span class="hi-arc hi-arc-a"></span>
+            <span class="hi-arc hi-arc-b"></span>
+
+            <span class="hi-coord hi-coord-tl">x:048 / y:048</span>
+            <span class="hi-coord hi-coord-br">// BUILD.OK</span>
+            <span class="hi-node"></span>
+
+            <div class="hi-panel">
+
+              <div class="hi-panel-head">
+                <span class="hi-d"></span><span class="hi-d"></span><span class="hi-d"></span>
+                <span class="hi-panel-title">zevaryn://systems</span>
+                <span class="hi-panel-status">LIVE</span>
+              </div>
+
+              <span class="hi-scan"></span>
+
+              <div class="hi-panel-body">
+
+                <div class="hi-monogram">
+                  <svg viewBox="0 0 40 40" fill="none"><path d="M12 13H28L13 27H29" stroke="currentColor" stroke-width="3.4" stroke-linecap="square" stroke-linejoin="round"/></svg>
+                </div>
+
+                <div class="hi-lines">
+                  <div class="hi-line"><span>DESIGN</span><b></b></div>
+                  <div class="hi-line"><span>BUILD</span><b></b></div>
+                  <div class="hi-line"><span>DEPLOY</span><b></b></div>
+                </div>
+
+                <svg class="hi-spark" viewBox="0 0 200 44" preserveAspectRatio="none" aria-hidden="true">
+                  <polyline points="0,34 26,28 48,31 74,16 104,22 136,9 168,14 200,4"/>
+                  <circle cx="200" cy="4" r="2.5"/>
+                </svg>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================================
+         2. TRUST / CAPABILITY STRIP
+         ======================================================== -->
+
+    <section class="home-trust" aria-label="What Zevaryn delivers">
+      <div class="container">
+        <ul class="trust-list">
+          <li>Custom Websites</li>
+          <li>Responsive Development</li>
+          <li>Business Tools</li>
+          <li>Launch &amp; Deployment</li>
+          <li>Ongoing Support</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <!-- ========================================================
+         3. WHAT WE BUILD
+         ======================================================== -->
+
+    <section class="section home-build">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="label">What We Build</div>
+          <h2>More than something that <span class="brush">looks</span> good.</h2>
+          <p>
+            Your website should represent your business clearly, work on
+            every screen, and make it easy for people to understand what
+            you do — then keep working long after launch.
+          </p>
+        </div>
+
+        <div class="build-grid">
+
+          <article class="build-card build-card-lg reveal">
+            <div class="build-card-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#ff2f7e" stroke-width="1.6" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 9h18"/>
               </svg>
+              <span class="build-index">01</span>
+            </div>
+            <h3>Custom Websites</h3>
+            <p>
+              Original, responsive websites designed around your brand,
+              audience, and goals — not dropped into a prebuilt theme.
+            </p>
+            <span class="build-tag">Design → Build → Launch</span>
+          </article>
+
+          <article class="build-card reveal" data-delay="60">
+            <div class="build-card-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.6" aria-hidden="true">
+                <path d="m8 9-4 3 4 3"/><path d="m16 9 4 3-4 3"/><path d="m14 5-4 14"/>
+              </svg>
+              <span class="build-index">02</span>
+            </div>
+            <h3>Web Development</h3>
+            <p>
+              Clean, maintainable code that turns the design into a fast,
+              reliable website across modern devices.
+            </p>
+            <span class="build-tag">HTML · CSS · JavaScript</span>
+          </article>
+
+          <article class="build-card reveal" data-delay="120">
+            <div class="build-card-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#ff2f7e" stroke-width="1.6" aria-hidden="true">
+                <path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/>
+              </svg>
+              <span class="build-index">03</span>
+            </div>
+            <h3>Digital Experiences</h3>
+            <p>
+              Motion, interaction, forms, and features that make a site
+              feel considered and alive.
+            </p>
+            <span class="build-tag">Interaction · Motion</span>
+          </article>
+
+          <article class="build-card build-card-wide reveal" data-delay="180">
+            <div class="build-card-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.6" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
+              </svg>
+              <span class="build-index">04</span>
+            </div>
+            <h3>Business Software</h3>
+            <p>
+              Custom tools, dashboards, and internal systems for when
+              off-the-shelf software doesn't fit how your business runs.
+            </p>
+            <span class="build-tag">Dashboards · Workflows · Integrations</span>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================================
+         4. FEATURED PROJECT
+         ======================================================== -->
+
+    <section class="section home-featured">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="label">Featured Project</div>
+          <h2>Real work for <span class="brush">real</span> businesses.</h2>
+        </div>
+
+        <div class="featured-layout">
+
+          <div class="featured-copy reveal">
+
+            <span class="eyebrow-tag">Client Website / Consulting</span>
+
+            <h3>PMA Consulting</h3>
+
+            <p>
+              A custom consulting website that modernized PMA Consulting's
+              digital presence and made its services, projects, partners,
+              and events easy to explore on any device.
+            </p>
+
+            <div class="tag-row">
+              <span class="tag tag-pink">Custom Design</span>
+              <span class="tag">Responsive Build</span>
+              <span class="tag">Event Calendar</span>
+              <span class="tag">Admin Tools</span>
+            </div>
+
+            <a href="pma-consulting.html" class="btn btn-primary">
+              View Case Study
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg>
             </a>
 
+            <ul class="featured-stamps">
+              <li>Real client</li>
+              <li>Real website</li>
+              <li>Live deployment</li>
+            </ul>
+
           </div>
 
 
-          <div
-            class="hero-note reveal in"
-            data-delay="400"
-          >
-            CUSTOM WEB DEVELOPMENT.
-            <strong>PURPOSEFUL DESIGN.</strong>
-          </div>
-
-        </div>
-
-
-
-        <!-- HERO VISUAL -->
-
-        <div
-          class="hero-visual reveal-scale in"
-          data-delay="200"
-        >
-
-          <svg
-            viewBox="0 0 400 400"
-            style="
-              width:100%;
-              overflow:visible;
-            "
-            aria-hidden="true"
-          >
-
-            <circle
-              cx="200"
-              cy="200"
-              r="170"
-              fill="none"
-              stroke="rgba(139,92,246,.25)"
-              stroke-width="1"
-              stroke-dasharray="4 8"
-            />
-
-
-            <circle
-              cx="200"
-              cy="200"
-              r="140"
-              fill="none"
-              stroke="#ff2f7e"
-              stroke-width="1.4"
-              stroke-dasharray="240 500"
-              stroke-linecap="round"
-              transform="rotate(-30 200 200)"
-            >
-
-              <animateTransform
-                attributeName="transform"
-                type="rotate"
-                from="-30 200 200"
-                to="330 200 200"
-                dur="18s"
-                repeatCount="indefinite"
-              />
-
-            </circle>
-
-
-            <path
-              d="M130 130H270L140 270H280"
-              stroke="white"
-              stroke-width="14"
-              stroke-linecap="square"
-              stroke-linejoin="round"
-              fill="none"
-            />
-
-
-            <path
-              d="M130 130H270L140 270H280"
-              stroke="#ff2f7e"
-              stroke-width="14"
-              stroke-linecap="square"
-              stroke-linejoin="round"
-              fill="none"
-              opacity="0"
-            >
-
-              <animate
-                attributeName="opacity"
-                values="0;.5;0"
-                dur="4s"
-                repeatCount="indefinite"
-              />
-
-            </path>
-
-
-            <circle
-              cx="130"
-              cy="130"
-              r="3"
-              fill="#8b5cf6"
-            />
-
-            <circle
-              cx="280"
-              cy="270"
-              r="3"
-              fill="#8b5cf6"
-            />
-
-
-            <text
-              x="58"
-              y="58"
-              font-family="JetBrains Mono"
-              font-size="9"
-              fill="#7a7684"
-              letter-spacing="1"
-            >
-              // SYSTEM READY
-            </text>
-
-
-            <text
-              x="225"
-              y="345"
-              font-family="JetBrains Mono"
-              font-size="9"
-              fill="#ff2f7e"
-              letter-spacing="1"
-            >
-              // CUSTOM BUILD
-            </text>
-
-          </svg>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- ========================================================
-         SERVICES
-         ======================================================== -->
-
-    <section class="section home-services-section">
-
-      <div class="container">
-
-        <div class="section-heading reveal">
-
-          <div class="label">
-            WHAT WE BUILD
-          </div>
-
-          <h2>
-            More than something that
-            <span class="brush">looks</span>
-            good.
-          </h2>
-
-          <p>
-            Your website should represent your business clearly,
-            work beautifully on every screen, and make it easy for
-            people to understand what you do and take the next step.
-          </p>
-
-        </div>
-
-
-
-        <div class="service-grid">
-
-
-          <!-- CUSTOM WEBSITES -->
-
-          <article class="service-card reveal">
-
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#ff2f7e"
-              stroke-width="1.6"
-              aria-hidden="true"
-            >
-              <rect
-                x="3"
-                y="4"
-                width="18"
-                height="14"
-                rx="1"
-              />
-              <path d="M3 9h18"/>
-            </svg>
-
-            <h3>
-              Custom Websites
-            </h3>
-
-            <p>
-              Original, responsive websites designed specifically
-              around your business, audience, and brand.
-            </p>
-
-          </article>
-
-
-
-          <!-- WEB DEVELOPMENT -->
-
-          <article
-            class="service-card reveal"
-            data-delay="60"
-          >
-
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#8b5cf6"
-              stroke-width="1.6"
-              aria-hidden="true"
-            >
-              <path d="m8 9-4 3 4 3"/>
-              <path d="m16 9 4 3-4 3"/>
-              <path d="m14 5-4 14"/>
-            </svg>
-
-            <h3>
-              Web Development
-            </h3>
-
-            <p>
-              Clean development that turns the design into a fast,
-              responsive, reliable website.
-            </p>
-
-          </article>
-
-
-
-          <!-- DIGITAL EXPERIENCES -->
-
-          <article
-            class="service-card reveal"
-            data-delay="120"
-          >
-
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#ff2f7e"
-              stroke-width="1.6"
-              aria-hidden="true"
-            >
-              <path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/>
-            </svg>
-
-            <h3>
-              Digital Experiences
-            </h3>
-
-            <p>
-              Thoughtful interactions, motion, forms, calendars,
-              and features that make a website feel alive.
-            </p>
-
-          </article>
-
-
-
-          <!-- INTEGRATIONS -->
-
-          <article
-            class="service-card reveal"
-            data-delay="180"
-          >
-
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#8b5cf6"
-              stroke-width="1.6"
-              aria-hidden="true"
-            >
-              <circle cx="6" cy="12" r="3"/>
-              <circle cx="18" cy="6" r="3"/>
-              <circle cx="18" cy="18" r="3"/>
-              <path d="m9 11 6-4"/>
-              <path d="m9 13 6 4"/>
-            </svg>
-
-            <h3>
-              Website Integrations
-            </h3>
-
-            <p>
-              Connect forms, calendars, email services, databases,
-              analytics, and other tools your website needs.
-            </p>
-
-          </article>
-
-
-
-          <!-- SUPPORT -->
-
-          <article
-            class="service-card reveal"
-            data-delay="240"
-          >
-
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#ff2f7e"
-              stroke-width="1.6"
-              aria-hidden="true"
-            >
-              <path d="M20 6 9 17l-5-5"/>
-            </svg>
-
-            <h3>
-              Ongoing Support
-            </h3>
-
-            <p>
-              Updates, maintenance, improvements, troubleshooting,
-              and support after your website goes live.
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- ========================================================
-         FEATURED WORK
-         ======================================================== -->
-
-    <section class="section home-featured-section">
-
-      <div class="container">
-
-        <div class="section-heading reveal">
-
-          <div class="label">
-            FEATURED PROJECT
-          </div>
-
-          <h2>
-            Real work for
-            <span class="brush">real</span>
-            businesses.
-          </h2>
-
-          <p>
-            Every project starts with what the business actually
-            needs — not with a preselected template.
-          </p>
-
-        </div>
-
-
-
-        <article
-          class="tech-frame reveal"
-          style="
-            border:1px solid var(--line);
-            background:
-              linear-gradient(
-                160deg,
-                var(--bg-2),
-                var(--bg-3)
-              );
-            padding:48px;
-          "
-        >
-
-          <div
-            style="
-              display:grid;
-              grid-template-columns:1fr 1fr;
-              gap:52px;
-              align-items:center;
-            "
-          >
-
-
-            <!-- PROJECT CONTENT -->
-
-            <div>
-
-              <div
-                class="eyebrow-tag"
-                style="margin-bottom:14px;"
-              >
-                CLIENT WEBSITE / CONSULTING
+          <div class="featured-media reveal" data-delay="140">
+
+            <div class="featured-browser" data-parallax="1">
+              <div class="fb-bar">
+                <i></i><i></i><i></i>
+                <em>pmaconsulting.com</em>
               </div>
-
-
-              <h3
-                style="
-                  font-size:30px;
-                  margin-bottom:16px;
-                "
-              >
-                PMA Consulting
-              </h3>
-
-
-              <p style="margin-bottom:24px;">
-                A custom consulting website built to modernize
-                PMA Consulting's digital presence while making
-                its services, projects, partners, and events easier
-                to explore across desktop and mobile.
-              </p>
-
-
-              <div
-                class="tag-row"
-                style="margin-bottom:28px;"
-              >
-
-                <span class="tag">
-                  Custom Design
-                </span>
-
-                <span class="tag">
-                  Responsive Development
-                </span>
-
-                <span class="tag">
-                  Event Calendar
-                </span>
-
-                <span class="tag">
-                  Admin Tools
-                </span>
-
-              </div>
-
-
-              <a
-                href="pma-consulting.html"
-                class="btn btn-primary"
-              >
-                View Case Study
-
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M5 12h14M13 6l6 6-6 6"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
-                </svg>
-              </a>
-
-            </div>
-
-
-
-            <!-- PROJECT PREVIEW -->
-
-            <div>
-
-              <div class="browser-window">
-
-                <div class="browser-bar">
-
-                  <span class="browser-dot"></span>
-                  <span class="browser-dot"></span>
-                  <span class="browser-dot"></span>
-
-                  <span class="browser-address">
-                    pma-consulting
-                  </span>
-
+              <div class="fb-screen">
+                <div class="fb-nav">
+                  <span class="fb-mark">PMA<span>/</span>Consulting</span>
+                  <span class="fb-nav-links">Services · Projects · Events</span>
                 </div>
-
-
-                <div class="browser-content project-preview-image">
-
-                  <div
-                    style="
-                      padding:30px;
-                      position:relative;
-                      z-index:2;
-                    "
-                  >
-
-                    <div
-                      style="
-                        font-family:var(--f-mono);
-                        font-size:10px;
-                        color:var(--pink);
-                        margin-bottom:18px;
-                      "
-                    >
-                      // CLIENT WEBSITE
-                    </div>
-
-
-                    <div
-                      style="
-                        height:11px;
-                        width:72%;
-                        background:rgba(255,255,255,.12);
-                        border-radius:2px;
-                        margin-bottom:10px;
-                      "
-                    ></div>
-
-
-                    <div
-                      style="
-                        height:9px;
-                        width:48%;
-                        background:rgba(255,255,255,.07);
-                        border-radius:2px;
-                        margin-bottom:28px;
-                      "
-                    ></div>
-
-
-                    <div
-                      style="
-                        display:grid;
-                        grid-template-columns:repeat(3,1fr);
-                        gap:8px;
-                      "
-                    >
-
-                      <div
-                        style="
-                          height:72px;
-                          border:1px solid var(--line);
-                          background:rgba(255,47,126,.06);
-                        "
-                      ></div>
-
-                      <div
-                        style="
-                          height:72px;
-                          border:1px solid var(--line-violet);
-                          background:rgba(139,92,246,.06);
-                        "
-                      ></div>
-
-                      <div
-                        style="
-                          height:72px;
-                          border:1px solid var(--line);
-                          background:rgba(255,47,126,.06);
-                        "
-                      ></div>
-
-                    </div>
-
-                  </div>
-
+                <div class="fb-hero">
+                  <span class="fb-hero-h">Consulting, clearly organized.</span>
+                  <span class="fb-hero-p">Services, projects, partners &amp; events — all in one place.</span>
                 </div>
-
+                <div class="fb-cards" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
               </div>
+            </div>
 
+            <div class="featured-phone" data-parallax="2.4" aria-hidden="true">
+              <div class="fp-screen">
+                <b>PMA</b>
+                <span></span><span></span><span></span>
+              </div>
             </div>
 
           </div>
 
-        </article>
+        </div>
 
       </div>
 
@@ -865,141 +414,118 @@
 
 
     <!-- ========================================================
-         WHY ZEVARYN
+         5. WHY ZEVARYN
          ======================================================== -->
 
-    <section class="section home-principles-section">
+    <section class="section home-why">
+
+      <div class="container">
+
+        <div class="why-layout">
+
+          <div class="why-lead reveal">
+            <div class="label">Why Zevaryn</div>
+            <h2>Built <span class="brush">different</span>.</h2>
+            <p>
+              Your business isn't a template, and your website shouldn't be
+              built like one. Every project is shaped around how your
+              organization actually works — and supported long after it
+              goes live.
+            </p>
+            <a href="about.html" class="btn btn-ghost">
+              More About Zevaryn
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg>
+            </a>
+          </div>
+
+          <ol class="why-list">
+
+            <li class="why-item reveal">
+              <span class="why-num">01</span>
+              <div>
+                <h3>Custom by default</h3>
+                <p>No prebuilt themes. Every layout starts from your business, brand, and goals.</p>
+              </div>
+            </li>
+
+            <li class="why-item reveal" data-delay="70">
+              <span class="why-num">02</span>
+              <div>
+                <h3>Built around your business</h3>
+                <p>Structure, features, and content mapped to how your team actually operates.</p>
+              </div>
+            </li>
+
+            <li class="why-item reveal" data-delay="140">
+              <span class="why-num">03</span>
+              <div>
+                <h3>Clear communication</h3>
+                <p>You always know what's being built, why it matters, and where the project stands.</p>
+              </div>
+            </li>
+
+            <li class="why-item reveal" data-delay="210">
+              <span class="why-num">04</span>
+              <div>
+                <h3>Long-term support</h3>
+                <p>Launch is the start. Zevaryn stays on for updates, fixes, and improvements.</p>
+              </div>
+            </li>
+
+          </ol>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================================
+         6. PROCESS
+         ======================================================== -->
+
+    <section class="section home-process">
 
       <div class="container">
 
         <div class="section-heading reveal">
-
-          <div class="label">
-            WHY ZEVARYN
-          </div>
-
-          <h2>
-            Custom by
-            <span class="brush">default</span>.
-          </h2>
-
+          <div class="label">How It Works</div>
+          <h2>Simple process. <span class="brush">Proven</span> results.</h2>
           <p>
-            Your business isn't identical to everyone else's.
-            Your website shouldn't be either.
+            A clear path from the first conversation to launch — you stay
+            involved without having to manage the build yourself.
           </p>
-
         </div>
 
+        <ol class="process-line reveal">
 
+          <li class="pl-step">
+            <div class="pl-dot">01</div>
+            <h3>Discover</h3>
+            <p>We learn how your business works and what the project needs to do.</p>
+          </li>
 
-        <div
-          class="principles-grid"
-          style="
-            display:grid;
-            grid-template-columns:repeat(4,1fr);
-            gap:1px;
-            background:var(--line);
-            border:1px solid var(--line);
-          "
-        >
+          <li class="pl-step">
+            <div class="pl-dot">02</div>
+            <h3>Plan</h3>
+            <p>We map the pages, features, structure, visual direction, and timeline.</p>
+          </li>
 
+          <li class="pl-step">
+            <div class="pl-dot">03</div>
+            <h3>Build</h3>
+            <p>Design and development, tested and refined across real devices.</p>
+          </li>
 
-          <article class="service-card reveal">
+          <li class="pl-step">
+            <div class="pl-dot">04</div>
+            <h3>Launch</h3>
+            <p>We deploy, connect your domain, and help keep it running afterward.</p>
+          </li>
 
-            <div
-              class="eyebrow-tag"
-              style="margin-bottom:18px;"
-            >
-              01
-            </div>
-
-            <h3>
-              Designed Around You
-            </h3>
-
-            <p>
-              The design starts with your business, brand,
-              audience, and goals.
-            </p>
-
-          </article>
-
-
-
-          <article
-            class="service-card reveal"
-            data-delay="60"
-          >
-
-            <div
-              class="eyebrow-tag"
-              style="margin-bottom:18px;"
-            >
-              02
-            </div>
-
-            <h3>
-              Built From the Ground Up
-            </h3>
-
-            <p>
-              No generic website dropped into a template and
-              called custom.
-            </p>
-
-          </article>
-
-
-
-          <article
-            class="service-card reveal"
-            data-delay="120"
-          >
-
-            <div
-              class="eyebrow-tag"
-              style="margin-bottom:18px;"
-            >
-              03
-            </div>
-
-            <h3>
-              Responsive Everywhere
-            </h3>
-
-            <p>
-              Every build is designed to work across phones,
-              tablets, laptops, and larger screens.
-            </p>
-
-          </article>
-
-
-
-          <article
-            class="service-card reveal"
-            data-delay="180"
-          >
-
-            <div
-              class="eyebrow-tag"
-              style="margin-bottom:18px;"
-            >
-              04
-            </div>
-
-            <h3>
-              Human Support
-            </h3>
-
-            <p>
-              Work directly with someone who understands
-              your project and the code behind it.
-            </p>
-
-          </article>
-
-        </div>
+        </ol>
 
       </div>
 
@@ -1008,518 +534,58 @@
 
 
     <!-- ========================================================
-         PROCESS
+         7. CUSTOM BUSINESS TOOLS
          ======================================================== -->
 
-    <section class="section home-process-section">
+    <section class="section home-tools">
 
       <div class="container">
 
-        <div class="section-heading reveal">
+        <div class="tools-panel tech-frame reveal">
 
-          <div class="label">
-            HOW IT WORKS
-          </div>
+          <div class="tools-grid">
 
-          <h2>
-            From idea to
-            <span class="brush">launch</span>.
-          </h2>
-
-          <p>
-            A straightforward process that keeps you involved
-            without making you manage the development yourself.
-          </p>
-
-        </div>
-
-
-
-        <div class="process-grid">
-
-
-          <article class="process-step reveal">
-
-            <div class="process-number">
-              01
-            </div>
-
-            <h3>
-              DISCOVER
-            </h3>
-
-            <p>
-              We talk through your business, audience,
-              goals, content, features, and what isn't
-              working today.
-            </p>
-
-          </article>
-
-
-
-          <article
-            class="process-step reveal"
-            data-delay="80"
-          >
-
-            <div class="process-number">
-              02
-            </div>
-
-            <h3>
-              PLAN
-            </h3>
-
-            <p>
-              We define the pages, functionality,
-              visual direction, project scope, and
-              launch plan.
-            </p>
-
-          </article>
-
-
-
-          <article
-            class="process-step reveal"
-            data-delay="160"
-          >
-
-            <div class="process-number">
-              03
-            </div>
-
-            <h3>
-              BUILD
-            </h3>
-
-            <p>
-              Your site is designed, developed,
-              tested, refined, and prepared for
-              real-world use.
-            </p>
-
-          </article>
-
-
-
-          <article
-            class="process-step reveal"
-            data-delay="240"
-          >
-
-            <div class="process-number">
-              04
-            </div>
-
-            <h3>
-              LAUNCH
-            </h3>
-
-            <p>
-              We deploy the site, connect your domain,
-              verify the important pieces, and help
-              keep it running afterward.
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- ========================================================
-         ADVANCED WEB CAPABILITIES
-         ======================================================== -->
-
-    <section class="section home-capabilities-section">
-
-      <div class="container">
-
-        <div
-          class="tech-frame reveal"
-          style="
-            border:1px solid var(--line-violet);
-            background:
-              radial-gradient(
-                circle at 20% 20%,
-                rgba(139,92,246,.08),
-                transparent 60%
-              ),
-              var(--bg-2);
-            padding:56px;
-          "
-        >
-
-          <div
-            style="
-              display:grid;
-              grid-template-columns:1fr 1fr;
-              gap:52px;
-              align-items:center;
-            "
-          >
-
-
-            <div>
-
-              <div
-                class="label"
-                style="margin-bottom:16px;"
-              >
-                MORE THAN A BASIC WEBSITE
-              </div>
-
-
-              <h2
-                style="
-                  font-size:clamp(26px,3.6vw,40px);
-                  margin-bottom:18px;
-                "
-              >
-                Need something
-                <span class="brush">custom</span>?
-              </h2>
-
-
-              <p style="margin-bottom:28px;">
-                Some websites need more than pages and a contact form.
-                Zevaryn can build custom website features and connected
-                tools around the way your business works.
+            <div class="tools-copy">
+              <div class="label">Business Software</div>
+              <h2>Need more than a <span class="brush">website</span>?</h2>
+              <p>
+                Zevaryn can also build custom tools and internal systems for
+                when off-the-shelf software doesn't fit the way your
+                business actually works.
               </p>
-
-
-              <a
-                href="services.html"
-                class="btn btn-ghost"
-              >
-                Explore Services
-
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M5 12h14M13 6l6 6-6 6"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
-                </svg>
+              <a href="services.html" class="btn btn-ghost">
+                See What's Possible
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg>
               </a>
-
             </div>
 
-
-
-            <div class="capability-grid">
-
-              <div class="capability-item">
-                Event Calendars
-              </div>
-
-              <div class="capability-item">
-                Admin Dashboards
-              </div>
-
-              <div class="capability-item">
-                Custom Forms
-              </div>
-
-              <div class="capability-item">
-                Database Integration
-              </div>
-
-              <div class="capability-item">
-                Client Portals
-              </div>
-
-              <div class="capability-item">
-                Custom Website Features
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- ========================================================
-         PRICING PREVIEW
-         ======================================================== -->
-
-    <section
-      class="section pricing-section home-pricing-section"
-      id="pricing-preview"
-    >
-
-      <div class="container">
-
-
-        <div class="section-heading pricing-intro reveal">
-
-          <div class="label">
-            SIMPLE, CLEAR PRICING
-          </div>
-
-          <h2>
-            Know where your
-            <span class="brush">project starts</span>.
-          </h2>
-
-          <p>
-            Every project is different, but you shouldn't have
-            to contact someone just to find out whether a custom
-            website is within your budget.
-          </p>
-
-        </div>
-
-
-
-        <div class="pricing-grid pricing-grid-home">
-
-
-          <!-- STARTER WEBSITE -->
-
-          <article class="pricing-card reveal">
-
-            <div class="pricing-card-top">
-
-              <div class="eyebrow-tag">
-                STARTER WEBSITE
-              </div>
-
-              <div class="pricing-price">
-
-                <span class="pricing-prefix">
-                  Starting at
-                </span>
-
-                <strong>
-                  $1,500
-                </strong>
-
-              </div>
-
-            </div>
-
-
-            <p class="pricing-description">
-              A focused custom website for businesses that need
-              a professional digital presence.
-            </p>
-
-
-            <ul class="pricing-features">
-
-              <li class="pricing-feature">
-                Up to 4 pages
-              </li>
-
-              <li class="pricing-feature">
-                Custom design
-              </li>
-
-              <li class="pricing-feature">
-                Responsive development
-              </li>
-
-              <li class="pricing-feature">
-                Contact functionality
-              </li>
-
-              <li class="pricing-feature">
-                Launch support
-              </li>
-
-            </ul>
-
-          </article>
-
-
-
-          <!-- BUSINESS WEBSITE -->
-
-          <article
-            class="pricing-card pricing-card-featured reveal"
-            data-delay="80"
-          >
-
-            <div class="pricing-badge">
-              MOST POPULAR
-            </div>
-
-
-            <div class="pricing-card-top">
-
-              <div class="eyebrow-tag">
-                BUSINESS WEBSITE
-              </div>
-
-              <div class="pricing-price">
-
-                <span class="pricing-prefix">
-                  Starting at
-                </span>
-
-                <strong>
-                  $2,500
-                </strong>
-
-              </div>
-
-            </div>
-
-
-            <p class="pricing-description">
-              A complete custom website for growing businesses
-              that need more room, functionality, and flexibility.
-            </p>
-
-
-            <ul class="pricing-features">
-
-              <li class="pricing-feature">
-                Up to 8 pages
-              </li>
-
-              <li class="pricing-feature">
-                Custom design & development
-              </li>
-
-              <li class="pricing-feature">
-                Responsive build
-              </li>
-
-              <li class="pricing-feature">
-                Advanced layouts
-              </li>
-
-              <li class="pricing-feature">
-                Contact / intake functionality
-              </li>
-
-              <li class="pricing-feature">
-                Basic integrations
-              </li>
-
-              <li class="pricing-feature">
-                Launch support
-              </li>
-
-            </ul>
-
-          </article>
-
-
-
-          <!-- ADVANCED WEBSITE -->
-
-          <article
-            class="pricing-card reveal"
-            data-delay="160"
-          >
-
-            <div class="pricing-card-top">
-
-              <div class="eyebrow-tag">
-                ADVANCED WEBSITE
-              </div>
-
-              <div class="pricing-price">
-
-                <span class="pricing-prefix">
-                  Starting at
-                </span>
-
-                <strong>
-                  $5,000
-                </strong>
-
-              </div>
-
-            </div>
-
-
-            <p class="pricing-description">
-              For larger websites or projects requiring advanced
-              custom functionality and connected tools.
-            </p>
-
-
-            <ul class="pricing-features">
-
-              <li class="pricing-feature">
-                Larger custom scope
-              </li>
-
-              <li class="pricing-feature">
-                Custom functionality
-              </li>
-
-              <li class="pricing-feature">
-                Integrations
-              </li>
-
-              <li class="pricing-feature">
-                Database-connected features
-              </li>
-
-              <li class="pricing-feature">
-                Admin tools where required
-              </li>
-
-            </ul>
-
-          </article>
-
-        </div>
-
-
-
-        <div class="pricing-preview-footer reveal">
-
-          <p class="pricing-note">
-            Starting prices are estimates. Final pricing depends on
-            project scope, complexity, content, integrations,
-            functionality, and timeline.
-          </p>
-
-
-          <a
-            href="services.html#pricing"
-            class="btn btn-ghost"
-          >
-            View Services & Pricing
-
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              aria-hidden="true"
-            >
-              <path
-                d="M5 12h14M13 6l6 6-6 6"
-                stroke="currentColor"
-                stroke-width="2"
-              />
+            <svg class="tools-diagram" viewBox="0 0 320 220" aria-hidden="true">
+              <line x1="160" y1="110" x2="58" y2="48"/>
+              <line x1="160" y1="110" x2="262" y2="48"/>
+              <line x1="160" y1="110" x2="58" y2="172"/>
+              <line class="td-flow" x1="160" y1="110" x2="262" y2="172"/>
+              <circle cx="58" cy="48" r="4"/>
+              <circle cx="262" cy="48" r="4"/>
+              <circle cx="58" cy="172" r="4"/>
+              <circle cx="262" cy="172" r="4"/>
+              <text class="td-label" x="58" y="34" text-anchor="middle">CALENDAR</text>
+              <text class="td-label" x="262" y="34" text-anchor="middle">DASHBOARD</text>
+              <text class="td-label" x="58" y="192" text-anchor="middle">INVENTORY</text>
+              <text class="td-label" x="262" y="192" text-anchor="middle">INTEGRATIONS</text>
+              <rect x="116" y="90" width="88" height="40" rx="4"/>
+              <text x="160" y="106" text-anchor="middle">YOUR</text>
+              <text x="160" y="119" text-anchor="middle">BUSINESS</text>
             </svg>
-          </a>
+
+          </div>
+
+          <ul class="tools-modules">
+            <li>Event Management</li>
+            <li>Admin Dashboards</li>
+            <li>Inventory Tools</li>
+            <li>Internal Workflows</li>
+            <li>Custom Integrations</li>
+          </ul>
 
         </div>
 
@@ -1530,70 +596,24 @@
 
 
     <!-- ========================================================
-         FINAL CTA
+         8. FINAL CTA
          ======================================================== -->
 
-    <section
-      class="section home-final-cta-section"
-      style="padding-bottom:140px;"
-    >
+    <section class="home-final">
+
+      <div class="final-watermark" aria-hidden="true">Z</div>
 
       <div class="container">
-
-        <div class="cta-panel reveal-scale">
-
-          <h2
-            style="
-              font-size:clamp(32px,5vw,54px);
-              margin-bottom:18px;
-            "
-          >
-            Ready for a website that
-            <br>
-            actually feels like
-            <span class="brush">your business</span>?
-          </h2>
-
-
-          <p
-            style="
-              max-width:520px;
-              margin:0 auto 34px;
-              font-size:16px;
-            "
-          >
-            Tell us what you're building, what your current site
-            isn't doing, or what you want your new website to become.
-          </p>
-
-
-          <a
-            href="start-a-project.html"
-            class="btn btn-primary"
-            style="
-              padding:18px 34px;
-              font-size:13px;
-            "
-          >
+        <div class="final-inner reveal-scale">
+          <div class="label">Start Here</div>
+          <h2>Ready to build something that <span class="brush">works for you</span>?</h2>
+          <p>Tell us what you need. We'll help turn it into a system that fits.</p>
+          <a href="start-a-project.html" class="btn btn-primary btn-lg">
             Start Your Project
-
-            <svg
-              width="15"
-              height="15"
-              viewBox="0 0 24 24"
-              fill="none"
-              aria-hidden="true"
-            >
-              <path
-                d="M5 12h14M13 6l6 6-6 6"
-                stroke="currentColor"
-                stroke-width="2"
-              />
-            </svg>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg>
           </a>
-
+          <p class="final-meta"><span>Custom build</span><span>Purposeful design</span><span>Real support</span></p>
         </div>
-
       </div>
 
     </section>
@@ -1604,11 +624,68 @@
 
 
   <!-- ==========================================================
-       SHARED FOOTER
-       Loaded from components/footer.html
+       FOOTER
        ========================================================== -->
 
-  <div id="footer-placeholder"></div>
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Zevaryn Systems — home">
+            <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <circle cx="20" cy="20" r="17" stroke="#ff2f7e" stroke-width="1.3" stroke-dasharray="70 30" stroke-linecap="round" transform="rotate(-45 20 20)"/>
+              <path d="M12 13H28L13 27H29" stroke="#fff" stroke-width="3" stroke-linecap="square" stroke-linejoin="round"/>
+            </svg>
+            <span>ZEVARYN<span class="sub">SYSTEMS</span></span>
+          </a>
+          <p>Custom websites and digital experiences built around the way your business works.</p>
+          <div class="footer-social" aria-label="Social links">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">LI</a>
+            <a href="#" aria-label="GitHub">GH</a>
+          </div>
+        </div>
+
+        <nav class="footer-col" aria-label="Site">
+          <h4>Navigate</h4>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="work.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="start-a-project.html">Start a Project</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Services">
+          <h4>Services</h4>
+          <a href="services.html">Custom Websites</a>
+          <a href="services.html">Web Development</a>
+          <a href="services.html">Website Redesign</a>
+          <a href="services.html">Custom Features</a>
+          <a href="services.html#pricing">Maintenance &amp; Support</a>
+        </nav>
+
+        <div class="footer-col footer-contact">
+          <h4>Contact</h4>
+          <a href="mailto:zevarynsystems@outlook.com">zevarynsystems@outlook.com</a>
+          <a href="tel:+12025158428">202-515-8428</a>
+          <p>Washington, DC</p>
+          <a href="start-a-project.html" class="footer-contact-cta">Start a project →</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Zevaryn Systems. All rights reserved.</span>
+        <span class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </span>
+      </div>
+
+    </div>
+  </footer>
 
 
 
@@ -1616,10 +693,7 @@
        CURSOR
        ========================================================== -->
 
-  <div
-    class="cursor-halo"
-    aria-hidden="true"
-  ></div>
+  <div class="cursor-halo" aria-hidden="true"></div>
 
 
 
@@ -1627,9 +701,8 @@
        JAVASCRIPT
        ========================================================== -->
 
-  <script src="js/components.js"></script>
-
   <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
 
 </body>
 

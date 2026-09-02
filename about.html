@@ -1,9 +1,560 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>About — Zevaryn Systems</title><meta name="description" content="Learn how Zevaryn Systems approaches custom web design and development."><link rel="stylesheet" href="css/style.css"></head>
-<body><div class="grid-overlay" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>
-<header class="site-nav"><div class="container nav-inner"><a href="index.html" class="nav-logo" aria-label="Zevaryn Systems home"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="17" stroke="#ff2f7e" stroke-width="1.3" stroke-dasharray="70 30" transform="rotate(-45 20 20)"/><path d="M12 13H28L13 27H29" stroke="white" stroke-width="3"/></svg><span>ZEVARYN<span class="sub">SYSTEMS</span></span></a><nav class="nav-links" aria-label="Primary navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="about.html" class="active">About</a></nav><div><a href="start-a-project.html" class="nav-cta">Start a Project</a><button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button></div></div></header><div class="mobile-menu" aria-label="Mobile navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="about.html">About</a><a href="start-a-project.html" class="m-cta">// Start a Project →</a></div>
-<main><section class="page-hero"><div class="container page-intro"><div class="label reveal in">ABOUT ZEVARYN</div><h1 class="reveal in">Web development built a little <span class="brush">differently</span>.</h1><p class="reveal in">Zevaryn Systems creates custom websites and digital experiences around the way a business actually works — not around the limitations of a template.</p></div></section>
-<section class="section"><div class="container split-layout"><div class="page-copy reveal"><div class="label">WHY ZEVARYN EXISTS</div><h2>Businesses should not have to reshape themselves for a website.</h2><p>The best website starts with the business itself: what it does, who it serves, what it needs to communicate, and how its team works day to day.</p><p>Zevaryn exists to make that work visible and useful online through design and development shaped around the company, its audience, its goals, and its workflow.</p></div><aside class="info-panel reveal" data-delay="120"><h3>Built Around</h3><div class="numbered-list"><div><strong>01</strong><span>The company</span></div><div><strong>02</strong><span>Its audience</span></div><div><strong>03</strong><span>Its goals</span></div><div><strong>04</strong><span>Its workflow</span></div></div></aside></div></section>
-<section class="section"><div class="container"><div class="section-heading reveal"><div class="label">OUR APPROACH</div><h2>Clear purpose. Custom execution.</h2></div><div class="feature-list"><div class="reveal"><h3>Custom by Default</h3><p>Each project begins with the actual needs of the business, not a template waiting to be filled.</p></div><div class="reveal" data-delay="80"><h3>Purpose Before Decoration</h3><p>Visual choices support clarity, trust, and useful next steps.</p></div><div class="reveal" data-delay="160"><h3>Build for Real People</h3><p>Interfaces should work for the people visiting and the people maintaining them.</p></div><div class="reveal" data-delay="240"><h3>Designed to Grow</h3><p>Flexible structures make room for new content and functionality as the work changes.</p></div></div></div></section>
-<section class="section"><div class="container split-layout"><div class="page-copy reveal"><div class="label">THE FOUNDER</div><h2>[INSERT MY PUBLIC NAME HERE]</h2><p><strong>Founder / Web Developer</strong></p><p>Zevaryn grew from a love of building things, solving problems, experimenting with web technology, and turning business needs into useful digital experiences.</p><p>The work stays close to the details: listening to how a business operates, finding the clearest path through a problem, and building something that feels like it belongs to the organization using it.</p></div><aside class="info-panel reveal" data-delay="120"><div class="label">BASED IN WASHINGTON, DC</div><h3>Building for anywhere.</h3><p>Zevaryn Systems works with businesses that need a website shaped around where they are going next.</p></aside></div></section><section class="section section-sm"><div class="container page-cta reveal"><div class="label">START HERE</div><h2>Let's build something.</h2><a href="start-a-project.html" class="btn btn-primary">Start a Project</a></div></section></main>
-<footer><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="index.html" class="nav-logo">ZEVARYN<span class="sub">SYSTEMS</span></a><p>Custom websites and digital experiences built around your business.</p></div><div class="footer-col"><h4>Navigate</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="about.html">About</a><a href="start-a-project.html">Start a Project</a></div><div class="footer-col"><h4>Services</h4><a href="services.html">Custom Websites</a><a href="services.html">Web Development</a><a href="services.html">Website Redesign</a></div><div class="footer-col"><h4>Connect</h4><a href="mailto:hello@zevarynsystems.com">hello@zevarynsystems.com</a><p>Washington, DC</p></div></div><div class="footer-bottom"><span>© 2026 Zevaryn Systems. All rights reserved.</span><span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></span></div></div></footer><div class="cursor-halo" aria-hidden="true"></div><script src="js/main.js"></script></body></html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About — Zevaryn Systems</title>
+
+  <meta
+    name="description"
+    content="Zevaryn Systems is an independent Washington, DC web development and technology company building custom websites, digital experiences, and business tools around the way organizations actually work. Founded by Adam Pherigo."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%230a0a0c'/%3E%3Ccircle cx='20' cy='20' r='15' fill='none' stroke='%23ff2f7e' stroke-width='2.4' stroke-dasharray='62 30' transform='rotate(-45 20 20)'/%3E%3Cpath d='M13 14H27L14 26H28' fill='none' stroke='%23f4f2f6' stroke-width='3.4' stroke-linecap='square' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+
+<body>
+
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+
+
+  <!-- ==========================================================
+       NAVIGATION
+       ========================================================== -->
+
+  <header class="site-nav">
+    <div class="container nav-inner">
+
+      <a href="index.html" class="nav-logo" aria-label="Zevaryn Systems — home">
+        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <circle cx="20" cy="20" r="17" stroke="#ff2f7e" stroke-width="1.3" stroke-dasharray="70 30" stroke-linecap="round" transform="rotate(-45 20 20)"/>
+          <path d="M12 13H28L13 27H29" stroke="#fff" stroke-width="3" stroke-linecap="square" stroke-linejoin="round"/>
+        </svg>
+        <span>ZEVARYN<span class="sub">SYSTEMS</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="about.html" class="active" aria-current="page">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="start-a-project.html" class="nav-cta">Start a Project</a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+    <a href="about.html" class="active" aria-current="page">About</a>
+    <a href="start-a-project.html" class="m-cta">Start a Project →</a>
+  </div>
+
+
+
+  <!-- ==========================================================
+       MAIN
+       ========================================================== -->
+
+  <main>
+
+
+    <!-- ========================================================
+         1. HERO
+         ======================================================== -->
+
+    <section class="about-hero">
+      <div class="container">
+
+        <p class="about-hero-eyebrow reveal in">
+          <b>About</b> <span>/</span> Zevaryn Systems
+        </p>
+
+        <h1 class="reveal in" data-delay="80">
+          <span class="line">Built differently.</span>
+          <span class="line">Built <span class="brush">around you</span>.</span>
+        </h1>
+
+        <p class="about-hero-lead reveal in" data-delay="160">
+          Zevaryn Systems is a Washington, DC-based web development and
+          technology company creating custom websites, digital experiences,
+          and business tools around the way organizations actually work.
+        </p>
+
+        <p class="about-hero-thesis reveal in" data-delay="240">
+          Technology should adapt to the business — not force the business
+          to adapt to the technology.
+        </p>
+
+        <p class="about-hero-meta reveal in" data-delay="320">
+          <span>Washington, DC</span>
+          <span>Independent</span>
+        </p>
+
+      </div>
+    </section>
+
+
+
+    <!-- ========================================================
+         2. COMPANY INTRODUCTION
+         ======================================================== -->
+
+    <section class="section about-section">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="label">Company Introduction</div>
+          <h2>We build around the <span class="brush">problem</span>.</h2>
+        </div>
+
+        <div class="about-intro-copy about-prose reveal">
+          <p>
+            Zevaryn Systems began with hands-on web design and development,
+            and a simple idea: a business shouldn't have to settle for a
+            generic digital solution when its needs are genuinely different.
+          </p>
+          <p>
+            Every project starts by understanding the organization, its
+            audience, its goals, its workflow, and the actual problem being
+            solved. Design and development follow from that understanding —
+            not the other way around.
+          </p>
+
+          <ul class="about-intro-strip">
+            <li>The organization</li>
+            <li>Its audience</li>
+            <li>Its goals</li>
+            <li>Its workflow</li>
+            <li>The problem</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- ========================================================
+         3. WHY ZEVARYN EXISTS
+         ======================================================== -->
+
+    <section class="section about-section about-band">
+      <div class="container">
+
+        <div class="about-why-layout">
+
+          <div class="about-why-lead reveal">
+            <div class="label">Why Zevaryn?</div>
+            <h2>The space between a <span class="brush">template</span> and an agency.</h2>
+            <p>
+              Plenty of small businesses and organizations need something
+              more personal than a template — but they don't need a large
+              development agency, and shouldn't have to pay for one.
+            </p>
+            <p>Zevaryn Systems exists in that space.</p>
+          </div>
+
+          <ul class="about-why-list">
+
+            <li class="reveal">
+              <h3>Custom work</h3>
+              <p>Built for your business, not adapted from someone else's.</p>
+            </li>
+
+            <li class="reveal" data-delay="70">
+              <h3>Clear communication</h3>
+              <p>You always know what's being built, and why it matters.</p>
+            </li>
+
+            <li class="reveal" data-delay="140">
+              <h3>Approachable development</h3>
+              <p>Work directly with the person building the solution.</p>
+            </li>
+
+            <li class="reveal" data-delay="210">
+              <h3>Thoughtful design</h3>
+              <p>Visual choices that serve the message — not decoration for its own sake.</p>
+            </li>
+
+            <li class="reveal" data-delay="280">
+              <h3>Right-sized solutions</h3>
+              <p>Appropriate to what your organization actually needs today.</p>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- ========================================================
+         4. MISSION
+         ======================================================== -->
+
+    <section class="section about-section">
+      <div class="container">
+
+        <div class="about-mission-inner reveal">
+          <div class="label">Mission</div>
+          <h2>Technology with a <span class="brush">purpose</span>.</h2>
+          <p class="about-mission-statement">
+            Zevaryn Systems builds purposeful digital solutions that help
+            businesses communicate clearly, operate more effectively, and
+            create stronger experiences for the people they serve.
+          </p>
+          <p class="about-mission-support">
+            Every page, feature, animation, integration, and system should
+            have a reason to exist.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- ========================================================
+         5. HOW WE BUILD
+         ======================================================== -->
+
+    <section class="section about-section">
+      <div class="container">
+
+        <div class="about-how-lead reveal">
+          <div class="label">How We Build</div>
+          <h2>A consistent way of <span class="brush">working</span>.</h2>
+          <p>
+            The same approach runs through every project, whether it's a
+            three-page website or a custom internal tool.
+          </p>
+        </div>
+
+        <ol class="about-how-list">
+
+          <li class="about-how-item reveal">
+            <span class="about-how-num">01</span>
+            <div>
+              <h3>Listen first</h3>
+              <p>Understand the business before deciding what to build.</p>
+            </div>
+          </li>
+
+          <li class="about-how-item reveal" data-delay="80">
+            <span class="about-how-num">02</span>
+            <div>
+              <h3>Design with purpose</h3>
+              <p>Visual decisions should support the brand, the message, and the user experience.</p>
+            </div>
+          </li>
+
+          <li class="about-how-item reveal" data-delay="160">
+            <span class="about-how-num">03</span>
+            <div>
+              <h3>Build for real use</h3>
+              <p>Responsive layouts, accessibility considerations, testing, performance, and maintainability all matter.</p>
+            </div>
+          </li>
+
+          <li class="about-how-item reveal" data-delay="240">
+            <span class="about-how-num">04</span>
+            <div>
+              <h3>Stay involved</h3>
+              <p>Launch isn't necessarily the end — ongoing support and future improvements are available.</p>
+            </div>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+
+
+    <!-- ========================================================
+         6. COMPANY VALUES
+         ======================================================== -->
+
+    <section class="section about-section about-band">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="label">What We Value</div>
+          <h2>Six things that don't <span class="brush">change</span>.</h2>
+        </div>
+
+        <div class="about-values-grid reveal">
+
+          <div class="about-value">
+            <span class="about-value-key">01</span>
+            <h3>Custom by default</h3>
+            <p>Start from the client's actual needs instead of forcing everything into the same template.</p>
+          </div>
+
+          <div class="about-value">
+            <span class="about-value-key">02</span>
+            <h3>Clear communication</h3>
+            <p>Clients should understand what is being built, why, and what comes next.</p>
+          </div>
+
+          <div class="about-value">
+            <span class="about-value-key">03</span>
+            <h3>Built with purpose</h3>
+            <p>Features should solve a problem or improve the experience.</p>
+          </div>
+
+          <div class="about-value">
+            <span class="about-value-key">04</span>
+            <h3>Quality over shortcuts</h3>
+            <p>Thoughtful structure, testing, responsiveness, and maintainability matter.</p>
+          </div>
+
+          <div class="about-value">
+            <span class="about-value-key">05</span>
+            <h3>Always learning</h3>
+            <p>Technology changes constantly, and improvement is part of the work.</p>
+          </div>
+
+          <div class="about-value">
+            <span class="about-value-key">06</span>
+            <h3>Human approach</h3>
+            <p>Every project involves real people, real organizations, and real goals.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- ========================================================
+         7. FOUNDER
+         ======================================================== -->
+
+    <section class="section about-section">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="label">The Founder</div>
+        </div>
+
+        <div class="about-founder-layout">
+
+          <!--
+            Founder portrait: this is a branded placeholder frame.
+            To use a real photo, drop an <img> directly inside
+            .about-portrait-frame (it fills the frame via object-fit),
+            give it alt="Adam Pherigo, founder of Zevaryn Systems",
+            and remove aria-hidden from .about-founder-portrait.
+          -->
+          <div class="about-founder-portrait reveal" aria-hidden="true">
+            <div class="about-portrait-frame tech-frame">
+              <span class="about-portrait-mono">// FOUNDER</span>
+              <div class="about-portrait-inner">
+                <span class="about-portrait-initials">AP</span>
+              </div>
+              <span class="about-portrait-scan"></span>
+              <span class="about-portrait-tag">ZEVARYN.SYSTEMS</span>
+            </div>
+          </div>
+
+          <div class="about-founder-copy reveal" data-delay="100">
+            <h2>Adam Pherigo</h2>
+            <p class="about-founder-title">Founder &amp; Developer</p>
+            <p>
+              Adam built Zevaryn Systems out of a growing interest in web
+              development, software, design, and solving practical problems
+              with technology.
+            </p>
+            <p>
+              Hands-on project work led to the idea of a company that could
+              provide custom websites — and, over time, broader business
+              tools — without losing the personal approach of working
+              directly with the person building the solution.
+            </p>
+            <blockquote class="about-founder-quote">
+              “I wanted to build a company where technology starts with the
+              person or business that actually needs it.”
+            </blockquote>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- ========================================================
+         8. COMPANY DIRECTION
+         ======================================================== -->
+
+    <section class="section about-section about-band">
+      <div class="container">
+
+        <div class="about-direction-layout">
+
+          <div class="about-direction-copy reveal">
+            <div class="label">Where Zevaryn Is Going</div>
+            <h2>Building beyond the <span class="brush">website</span>.</h2>
+            <p>Web development is at the center of Zevaryn Systems today.</p>
+            <p>
+              Over time, the company is also developing reusable business
+              tools and software systems — shaped by problems discovered
+              through real client work rather than invented in a vacuum.
+            </p>
+
+            <ul class="about-direction-examples">
+              <li>Event management</li>
+              <li>Administrative tools</li>
+              <li>Scheduling &amp; workflow tools</li>
+              <li>Inventory tools</li>
+              <li>Business dashboards</li>
+              <li>Custom integrations</li>
+            </ul>
+
+            <p class="about-direction-note">
+              These are directions, not finished products — and there are
+              no launch dates to promise.
+            </p>
+          </div>
+
+          <ol class="about-direction-beats reveal" data-delay="100">
+            <li><span>Step 01</span>Start with the problem.</li>
+            <li><span>Step 02</span>Build what is useful.</li>
+            <li><span>Step 03</span>Expand when there is a reason.</li>
+          </ol>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- ========================================================
+         9. FINAL CTA
+         ======================================================== -->
+
+    <section class="about-final">
+
+      <div class="about-final-watermark" aria-hidden="true">Z</div>
+
+      <div class="container">
+        <div class="about-final-inner reveal-scale">
+          <div class="label">Start Here</div>
+          <h2>Have something you want to <span class="brush">build</span>?</h2>
+          <p>Tell us what your business needs, and let's figure out what the right solution looks like.</p>
+          <div class="about-final-actions">
+            <a href="start-a-project.html" class="btn btn-primary about-btn-lg">
+              Start a Project
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg>
+            </a>
+            <a href="work.html" class="btn btn-ghost">
+              View Our Work
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg>
+            </a>
+          </div>
+          <p class="about-final-meta">
+            <span>Washington, DC</span>
+            <span>Independent</span>
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- ==========================================================
+       FOOTER
+       ========================================================== -->
+
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Zevaryn Systems — home">
+            <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <circle cx="20" cy="20" r="17" stroke="#ff2f7e" stroke-width="1.3" stroke-dasharray="70 30" stroke-linecap="round" transform="rotate(-45 20 20)"/>
+              <path d="M12 13H28L13 27H29" stroke="#fff" stroke-width="3" stroke-linecap="square" stroke-linejoin="round"/>
+            </svg>
+            <span>ZEVARYN<span class="sub">SYSTEMS</span></span>
+          </a>
+          <p>Custom websites and digital experiences built around the way your business works.</p>
+          <div class="footer-social" aria-label="Social links">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">LI</a>
+            <a href="#" aria-label="GitHub">GH</a>
+          </div>
+        </div>
+
+        <nav class="footer-col" aria-label="Site">
+          <h4>Navigate</h4>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="work.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="start-a-project.html">Start a Project</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Services">
+          <h4>Services</h4>
+          <a href="services.html">Custom Websites</a>
+          <a href="services.html">Web Development</a>
+          <a href="services.html">Website Redesign</a>
+          <a href="services.html">Custom Features</a>
+          <a href="services.html#pricing">Maintenance &amp; Support</a>
+        </nav>
+
+        <div class="footer-col footer-contact">
+          <h4>Contact</h4>
+          <a href="mailto:zevarynsystems@outlook.com">zevarynsystems@outlook.com</a>
+          <a href="tel:+12025158428">202-515-8428</a>
+          <p>Washington, DC</p>
+          <a href="start-a-project.html" class="footer-contact-cta">Start a project →</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Zevaryn Systems. All rights reserved.</span>
+        <span class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </span>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="cursor-halo" aria-hidden="true"></div>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

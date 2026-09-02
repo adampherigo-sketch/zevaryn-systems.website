@@ -432,9 +432,20 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 
 
-  const currentPage =
+  const rawPage =
     window.location.pathname.split('/').pop() ||
     'index.html';
+
+
+  /*
+   * Map detail / sub-pages onto their primary nav item
+   * so the active state stays correct.
+   */
+  const navAliases = {
+    'pma-consulting.html': 'work.html'
+  };
+
+  const currentPage = navAliases[rawPage] || rawPage;
 
 
   navLinks.forEach(link => {
@@ -442,10 +453,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const linkPage =
       link.getAttribute('href')?.split('/').pop();
 
-    if (linkPage === currentPage) {
-      link.classList.add('active');
+    const isActive = linkPage === currentPage;
+
+    link.classList.toggle('active', isActive);
+
+    if (isActive) {
+      link.setAttribute('aria-current', 'page');
     } else {
-      link.classList.remove('active');
+      link.removeAttribute('aria-current');
     }
 
   });
@@ -454,27 +469,6 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ==========================================================
      PROJECT INQUIRY FORM
      ========================================================== */
-
-  const projectForm = document.querySelector('[data-project-form]');
-  const formStatus = document.querySelector('[data-form-status]');
-
-
-  if (projectForm && formStatus) {
-    projectForm.addEventListener('submit', event => {
-      event.preventDefault();
-
-      if (!projectForm.checkValidity()) {
-        formStatus.textContent =
-          'Please complete the required fields before sending.';
-        projectForm.reportValidity();
-        return;
-      }
-
-      formStatus.textContent =
-        'Project form is being prepared for launch.';
-    });
-  }
-
 
   /* ==========================================================
      SYSTEM LINE OPTIONAL EFFECT

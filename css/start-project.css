@@ -1,0 +1,316 @@
+/* ==========================================================
+   ZEVARYN SYSTEMS — START A PROJECT
+   Short, clean inquiry form styling
+   ========================================================== */
+
+.project-intake-hero {
+  position: relative;
+  z-index: var(--z-content);
+  padding: clamp(98px, 12vw, 138px) 0 clamp(18px, 4vw, 32px);
+}
+
+.project-intake-intro {
+  max-width: 780px;
+}
+
+.project-intake-intro .label {
+  margin-bottom: var(--space-sm);
+}
+
+.project-intake-intro h1 {
+  margin: 0 0 var(--space-sm);
+  font-size: clamp(2.4rem, 4.5vw, 4rem);
+  letter-spacing: -.04em;
+}
+
+.project-intake-intro p {
+  max-width: 62ch;
+  color: var(--gray-1);
+  font-size: clamp(1rem, 1.15vw, 1.125rem);
+}
+
+.project-form-section {
+  padding-top: clamp(22px, 4vw, 40px);
+  padding-bottom: clamp(52px, 8vw, 84px);
+}
+
+.project-intake-shell {
+  max-width: 880px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+
+.project-form-wrap {
+  display: grid;
+  gap: 18px;
+}
+
+.project-pricing-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 18px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, .02);
+  color: var(--gray-1);
+  font-size: var(--text-sm);
+}
+
+.project-pricing-note span:first-child {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.project-pricing-note a {
+  color: var(--pink);
+}
+
+.project-form {
+  display: grid;
+  gap: 18px;
+  padding: clamp(22px, 3vw, 32px);
+  border: 1px solid var(--line-violet);
+  border-radius: var(--radius-md);
+  background: linear-gradient(160deg, rgba(139, 92, 246, .04), rgba(255, 255, 255, .01) 40%, transparent);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-field.full {
+  grid-column: 1 / -1;
+}
+
+.form-field label {
+  color: var(--white);
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.form-field input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  min-height: 52px;
+  padding: 14px 15px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, .02);
+  color: var(--white);
+  font: inherit;
+  transition: border-color var(--motion-fast) var(--ease-standard), background var(--motion-fast) var(--ease-standard), box-shadow var(--motion-fast) var(--ease-standard);
+}
+
+.form-field input::placeholder,
+.form-textarea::placeholder {
+  color: var(--gray-2);
+}
+
+.form-field input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--pink);
+  background: rgba(255, 255, 255, .04);
+  box-shadow: 0 0 0 1px rgba(255, 47, 126, .2);
+}
+
+.form-textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.form-select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--gray-1) 50%), linear-gradient(135deg, var(--gray-1) 50%, transparent 50%);
+  background-position: calc(100% - 18px) calc(50% - 2px), calc(100% - 12px) calc(50% - 2px);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+
+.form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 4px;
+  color: var(--gray-1);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+.form-consent input {
+  margin-top: 4px;
+  accent-color: var(--pink);
+}
+
+.project-submit-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 20px;
+}
+
+.project-submit-row .btn {
+  min-height: 54px;
+  padding-inline: 28px;
+}
+
+.project-submit-row .btn[disabled] {
+  opacity: .7;
+  cursor: wait;
+}
+
+.form-status {
+  min-height: 22px;
+  margin: 0;
+  color: var(--pink);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+.form-status[data-state="success"] {
+  color: #d9ffe9;
+}
+
+.form-status[data-state="error"] {
+  color: #ffd4d9;
+}
+
+.form-status[data-state="pending"] {
+  color: var(--gray-1);
+}
+
+.status-detail {
+  display: block;
+  margin-top: 6px;
+  color: var(--gray-1);
+}
+
+.netlify-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.project-info-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, .02);
+}
+
+.project-info-step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border: 1px solid rgba(255, 255, 255, .06);
+  background: rgba(255, 255, 255, .01);
+}
+
+.project-info-step span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--pink);
+  font-family: var(--f-mono);
+  font-size: 11px;
+}
+
+.project-info-step p {
+  margin: 0;
+  color: var(--gray-1);
+  font-size: var(--text-sm);
+}
+
+.direct-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 18px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, .02);
+  color: var(--gray-1);
+  font-size: var(--text-sm);
+  text-align: center;
+}
+
+.direct-contact span {
+  color: var(--white);
+}
+
+.direct-contact a {
+  color: var(--pink);
+}
+
+@media (max-width: 760px) {
+  .project-intake-shell {
+    max-width: 100%;
+  }
+
+  .project-pricing-note {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-form {
+    padding: 18px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-info-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .project-submit-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project-submit-row .btn {
+    width: 100%;
+  }
+
+  .direct-contact {
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-field input,
+  .form-select,
+  .form-textarea {
+    transition: none;
+  }
+}
