@@ -406,24 +406,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ==========================================================
-     PREVENT PLACEHOLDER SOCIAL LINKS FROM JUMPING TO TOP
-     ========================================================== */
-
-  const placeholderLinks = document.querySelectorAll(
-    'a[href="#"]'
-  );
-
-
-  placeholderLinks.forEach(link => {
-
-    link.addEventListener('click', event => {
-      event.preventDefault();
-    });
-
-  });
-
-
-  /* ==========================================================
      ACTIVE NAV LINK
      ========================================================== */
 
@@ -489,15 +471,5 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ==========================================================
      READY
      ========================================================== */
-
-  console.log(
-    '%c ZEVARYN.SYSTEMS ',
-    'background:#ff2f7e;color:#0a0a0c;font-weight:bold;padding:4px 8px;'
-  );
-
-  console.log(
-    '%c Interface ready. ',
-    'color:#8b5cf6;'
-  );
 
 });

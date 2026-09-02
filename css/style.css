@@ -712,7 +712,7 @@ body::after {
   animation: entryRise .7s .25s var(--ease-standard) both;
 }
 
-.entry-interface h1 {
+.entry-interface h2 {
   max-width: 680px;
   margin: 18px 0;
   font-size: clamp(34px, 5vw, 68px);
@@ -2664,7 +2664,7 @@ section > .container > .pricing-note.reveal,
 @media (max-width: 560px) {
   .entry-interface { width: min(100% - 40px, 420px); }
   .entry-logo-wrap { width: 82px; margin-bottom: 24px; }
-  .entry-interface h1 { font-size: clamp(32px, 10vw, 46px); }
+  .entry-interface h2 { font-size: clamp(32px, 10vw, 46px); }
   .entry-actions { width: 100%; flex-direction: column; }
   .entry-button { width: 100%; }
   .entry-footer { justify-content: center; gap: 18px; }
