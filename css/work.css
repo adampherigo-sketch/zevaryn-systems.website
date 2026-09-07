@@ -22,10 +22,8 @@
 }
 
 .portfolio-intro-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr);
-  gap: clamp(24px, 4vw, 54px);
-  align-items: end;
+  display: flex;
+  justify-content: center;
 }
 
 .portfolio-legend {
@@ -74,7 +72,13 @@
   gap: 12px;
   padding: 28px;
   text-align: center;
-  background: rgba(10, 10, 12, .72);
+  background: rgba(10, 10, 12, .4);
+  transition: background var(--motion-normal) var(--ease-standard);
+}
+
+.project-live-preview:hover .live-preview-overlay,
+.project-live-preview:focus-within .live-preview-overlay {
+  background: rgba(10, 10, 12, .28);
 }
 
 .live-preview-overlay strong {
@@ -150,7 +154,6 @@
 }
 
 @media (max-width: 1024px) {
-  .portfolio-intro-grid,
   .work-featured-card {
     grid-template-columns: 1fr;
   }
