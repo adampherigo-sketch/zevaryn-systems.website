@@ -1708,6 +1708,20 @@ body::after {
 .browser-chrome span:nth-child(2) { background: var(--pink); }
 .browser-chrome span:nth-child(3) { background: var(--violet); }
 
+.project-browser-shot {
+  position: absolute;
+  inset: 38px 0 0;
+  overflow: hidden;
+}
+
+.project-browser-shot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
 .mock-pma,
 .mock-spa,
 .mock-restaurant,
