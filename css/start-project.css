@@ -158,6 +158,18 @@
   accent-color: var(--pink);
 }
 
+.form-privacy-note {
+  margin-top: 10px;
+  color: var(--gray-2);
+  font-size: var(--text-xs);
+  line-height: 1.6;
+}
+
+.form-privacy-note a {
+  color: var(--gray-1);
+  text-decoration: underline;
+}
+
 .project-submit-row {
   display: flex;
   flex-wrap: wrap;

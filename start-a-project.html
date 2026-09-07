@@ -28,6 +28,10 @@
   <meta name="twitter:description" content="Tell Zevaryn Systems about your website, digital experience, or business tool project.">
   <meta name="theme-color" content="#0a0a0c">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@600;700&display=swap">
+
   <link
     rel="stylesheet"
     href="css/style.css"
@@ -42,6 +46,7 @@
 
 <body>
 
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- ==========================================================
        BACKGROUND EFFECTS
@@ -105,7 +110,7 @@
        MAIN
        ========================================================== -->
 
-  <main>
+  <main id="main-content">
     <section class="project-intake-hero">
       <div class="container project-intake-intro reveal in">
         <div class="label">START A PROJECT / LET'S BUILD</div>
@@ -125,7 +130,7 @@
             <a href="services.html">View Services &amp; Pricing →</a>
           </div>
 
-          <form class="project-form" data-project-form name="project-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+          <form class="project-form" data-project-form name="project-inquiry" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="project-inquiry">
             <div class="netlify-honeypot" aria-hidden="true">
               <label for="bot-field">Do not fill this in if you are a human.</label>
@@ -219,6 +224,8 @@
               <input type="checkbox" name="consent" required>
               <span>I understand this is a project inquiry and not a binding agreement.</span>
             </label>
+
+            <p class="form-privacy-note">Your information is used to respond to your inquiry. See our <a href="privacy.html">Privacy Policy</a>.</p>
 
             <div class="project-submit-row">
               <button class="btn btn-primary" type="submit">SEND PROJECT REQUEST →</button>
