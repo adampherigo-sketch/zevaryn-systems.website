@@ -432,31 +432,51 @@
   align-items: center;
   gap: 12px 28px;
   margin: 0;
-  padding: 18px 0;
+  /* Vertical padding is shared with .trust-list a below so the tappable area
+     is larger while the strip's overall height stays the same (8 + 10 = 18). */
+  padding: 8px 0;
   list-style: none;
 }
 
 .trust-list li {
   display: flex;
+}
+
+.trust-list a {
+  display: flex;
   align-items: center;
   gap: 10px;
+  padding: 10px 0;
   font-family: var(--f-mono);
   font-size: 11px;
   letter-spacing: .1em;
   text-transform: uppercase;
   color: var(--gray-1);
+  text-decoration: none;
+  transition: color var(--motion-fast) var(--ease-standard);
 }
 
-.trust-list li::before {
+.trust-list a::before {
   content: '';
   flex: none;
   width: 5px;
   height: 5px;
   background: var(--pink);
   transform: rotate(45deg);
+  transition: background var(--motion-fast) var(--ease-standard);
 }
 
-.trust-list li:nth-child(even)::before { background: var(--violet); }
+.trust-list li:nth-child(even) a::before { background: var(--violet); }
+
+.trust-list a:hover,
+.trust-list a:focus-visible {
+  color: var(--white);
+}
+
+.trust-list a:hover::before,
+.trust-list a:focus-visible::before {
+  background: var(--white);
+}
 
 
 /* ==========================================================
@@ -469,6 +489,13 @@
   gap: 1px;
   border: 1px solid var(--line);
   background: var(--line);
+}
+
+/* Anchor targets for the capability strip: keep the card clear of the fixed nav
+   when jumped to directly (the parent .section's scroll-margin doesn't apply here). */
+#custom-websites,
+#responsive-development {
+  scroll-margin-top: 100px;
 }
 
 .build-card {
